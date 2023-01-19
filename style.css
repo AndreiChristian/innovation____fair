@@ -1,0 +1,317 @@
+/* font-family: 'Comfortaa', cursive;
+font-family: 'Great Vibes', cursive;
+font-family: 'Lobster', cursive;
+font-family: 'Mr Dafoe', cursive;
+font-family: 'Playfair Display', serif;
+font-family: 'Sacramento', cursive; */
+
+* {
+  /* outline: 1px solid rgba(128, 128, 128, 0.164); */
+  /* outline: 2px solid red; */
+  color: white;
+  box-sizing: border-box;
+  /* overflow-x: hidden; */
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: teal;
+}
+
+/* navigation */
+
+nav {
+  width: 100%;
+  height: 8vh;
+  background-color: rgba(255, 255, 255, 0);
+  position: sticky;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-sizing: border-box;
+  padding: 1rem;
+  /* border-bottom: 1px solid rgba(255, 217, 0, 0.514);
+  box-shadow: 0 0 1px 2px rgba(255, 217, 0, 0.166); */
+}
+
+nav img {
+  width: 10%;
+  background-color: rgba(255, 255, 255, 0);
+}
+
+nav span {
+  color: darkgoldenrod;
+  background-color: rgba(255, 255, 255, 0);
+}
+
+nav span:hover {
+  box-shadow: 0px 0px 3px 3px rgba(208, 207, 205, 0.29);
+  border-radius: 10px;
+}
+
+/* the main part, including title, description, details, speakers, sponsors etc */
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  /* width: 100vw; */
+  margin: auto;
+}
+
+/* hero section including the two titles */
+
+.hero {
+  margin:  0;
+}
+
+.hero .title {
+  font-size: 6rem;
+  overflow: visible;
+  background-color: rgba(255, 204, 0, 0);
+}
+
+.hero .title.one {
+  font-family: "Sacramento", cursive;
+  /* color: hsl(43, 85%, 47%); */
+  color: rgba(255, 204, 0, 0.511);
+  transform: translateY(50%);
+  font-size: 7rem;
+  text-shadow: #fc0 1px 0 10px;
+}
+
+.hero .title.two {
+  font-family: "Playfair Display", serif;
+  color: rgba(255, 255, 255, 0.481);
+  text-shadow: rgba(255, 255, 255, 0.819) 1px 0 2px;
+  margin-bottom: 10vh;
+}
+
+/* desciption */
+
+main > .description {
+  text-align: center;
+  box-sizing: border-box;
+  width: 70%;
+  font-size: 1.2rem;
+}
+
+main>.description div{
+  color: hsl(180, 100%, 25%);
+  outline: 1px solid hsl(180, 100%, 15%);
+  margin: auto;
+  background-color: white;
+  padding: 10%;
+}
+
+main>.description .title{
+  margin-bottom: 2vh;
+  font-size: 1.4rem;
+  box-shadow: 5vw -3vw gold, -5vw -3vw gold;
+}
+
+main>.description .info{
+  box-shadow: 5vw 3vw gold, -5vw 3vw gold
+}
+
+
+
+
+/* the details of the event, price, location, date */
+main > .details {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+  border-radius: 10px;
+  /* box-shadow: 0px 0px 3px 3px rgba(208, 207, 205, 0.29); */
+  text-align: center;
+}
+
+main > .details > div {
+  /* outline: 2px solid red; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 1rem;
+  font-size: 1.2rem;
+}
+
+.question {
+  font-family: "Sacramento", cursive;
+  /* color: hsl(43, 85%, 47%); */
+  color: rgba(255, 204, 0, 0.811);
+  /* transform: translateY(50%); */
+  /* font-size: 7rem; */
+  font-size: 2rem;
+  text-shadow: #fc0 1px 0 10px;
+  transform: translateX(1rem);
+}
+
+.answer {
+  background-color: white;
+  color: teal;
+  padding: 1rem;
+  box-shadow: 1rem 1rem gold;
+  outline: 1px solid hsl(180, 100%, 15%);
+}
+/* SPEAKERS */
+
+.speakers {
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.speakers .title {
+  box-sizing: border-box;
+  margin: 1rem;
+  padding: 1rem;
+  font-size: 2rem;
+  color: rgba(255, 204, 0, 0.511);
+  text-shadow: #fc0 1px 0 3px;
+  text-align: center;
+  background-color: white;
+  /* outline: 3px solid hsl(180, 100%, 15%); */
+  box-shadow: 1rem 1rem gold;
+}
+
+.speakers .title__content{
+  font-family: 'Sacramento',cursive;
+  /* border: teal 0.5px solid; */
+  padding: 1rem;
+  color: teal;
+  text-shadow: none;
+  font-size: 3rem;
+}
+
+.speakers .list > div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 2rem 0;
+  padding: 1rem 0rem;
+  background-color: white;
+  box-shadow: 1rem 1rem gold;
+  
+}
+
+.speakers .name {
+  font-size: 3rem;
+  color: gold !important;
+  font-family: 'Sacramento',cursive;
+}
+
+.speakers .name, .speakers .description{
+  color: teal;
+  padding: 1rem;
+  text-align: center;
+}
+
+.speakers img {
+  width: 80%;
+}
+
+/* sponsors */
+
+.sponsors {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.sponsors .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 80%;
+  margin: 5vh 0;
+}
+
+.sponsors .title {
+  box-sizing: border-box;
+  margin: 1rem;
+  padding: 1rem;
+  font-size: 2rem;
+  color: rgba(255, 204, 0, 0.511);
+  text-shadow: #fc0 1px 0 3px;
+  text-align: center;
+  background-color: white;
+  /* outline: 3px solid hsl(180, 100%, 15%); */
+  box-shadow: 1rem 1rem gold;
+}
+
+.sponsors .title__content{
+  font-family: 'Sacramento',cursive;
+  /* border: teal 0.5px solid; */
+  padding: 1rem;
+  color: #008080;
+  text-shadow: none;
+  font-size: 3rem;
+}
+
+
+.sponsors img {
+  margin: 0.2rem;
+  width: 15%;
+}
+
+/* dropdown menu */
+.dropdown {
+  width: 100vw;
+  
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 2;
+  background-color: gold;
+  /* display: flex; */
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  display: none;
+}
+
+.dropdown div {
+  font-family: 'Sacramento',cursive;
+  font-size: 1.3rem;
+  color: gold;
+  padding: 1.5rem;
+  z-index: 3;
+  margin: 3vh 0;
+  background-color: hsl(180, 100%, 25%);
+  border: hsl(180, 100%, 15%) 2px solid;
+
+}
+
+/* footer */
+
+footer{
+  width: 100%;
+  margin-bottom: 5vw;
+  /* background-color: white; */
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+footer svg{
+  width: 20%;
+  color: #ffd700;
+}
+
+footer .hostco{
+  margin: auto;
+}
